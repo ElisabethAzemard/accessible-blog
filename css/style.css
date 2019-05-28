@@ -1,0 +1,237 @@
+/* ----- THEME ----- */
+
+:root {
+  --blackish: rgb(25, 25, 25);
+  --greyish: #ececec;
+  --redish: #e74c3c;
+  --darkishred: #c0392b;
+}
+
+/* ----- RESET ----- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* 16px * 62,5 / 100 = 1.000 */
+  margin: 0;
+  width: 100%;
+}
+
+header, nav, a, main, h1, h2, h3, img, p, article, footer, abbr, cite {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--blackish);
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ----- MOBILE FIRST ----- */
+
+/* --- HEADER --- */
+header {
+  background-color: var(--redish);
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-weight: 500;
+  padding-bottom: 10px;
+  margin: 0 2%;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+abbr {
+  font-weight: inherit;
+  color: inherit;
+}
+
+header img.logo {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+header nav {
+  padding: 10px 0;
+}
+
+header nav a {
+  margin: 5px;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+header nav a:hover, header nav a:active, header nav a:focus {
+  background-color: var(--darkishred);
+  color: var(--greyish);
+  border-radius: 5px;
+}
+
+/* --- MAIN --- */
+main {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+main section.dernieresPublications h2 {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: var(--redish);
+}
+
+main div.flexBox { /* DIV non sémantisée car sert uniquement de container pour les flex items */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* -- SECTION DERNIERES PUBLICATIONS -- */
+main section.dernieresPublications article {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main article:last-of-type {
+  margin-bottom: 0;
+}
+
+main article img.affiche {
+  display: block;
+  width: 30%;
+  float: left;
+  margin: 0 5% 10px 0;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 10px;
+}
+
+main article div.wrapInfos { /* Div non sémantisée car sert uniquement à empêcher le texte trop long de passer sous l'image à cause du float left */
+  float: left;
+  width: 65%;
+}
+
+main article p.infosBD {
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+main p.infosBD span, p.infosBD time {
+  font-weight: 100;
+}
+
+main p.infosBD span.resumeBD {
+  font-style: italic;
+}
+
+main h3.titreBD {
+  margin: 0 0 10px 0;
+}
+
+main h3.titreBD cite {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main article a.enSavoirPlus {
+  display: block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: var(--redish);
+  color: white;
+  border-radius: 5px;
+  transition: .4s;
+  width: fit-content;
+}
+
+main article a.enSavoirPlus:hover, a.enSavoirPlus:active, a.enSavoirPlus:focus {
+  background-color: var(--darkishred);
+}
+
+/* --- FOOTER --- */
+
+footer {
+  background-color: var(--redish);
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* ----- MOBILE DEVICES OVER 479px ----- */
+@media screen and (min-width: 480px){
+
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  main section.dernieresPublications h2 {
+    margin-left: 10px;
+  }
+
+  main section.dernieresPublications article {
+    width: calc(100% / 2 - 40px);
+    margin: 20px 20px;
+  }
+
+  main article img.affiche {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+  }
+
+  main article div.wrapInfos {
+    width: 100%;
+  }
+
+  main article p.infosBD {
+    font-weight: 400;
+    margin: 8px 0;
+  }
+
+}
+
+/* ----- TABLET DEVICES OVER 767px ----- */
+@media screen and (min-width: 768px){
+
+  main section.dernieresPublications article {
+    width: calc(100% / 4 - 30px);
+    margin: 10px 10px;
+  }
+
+  main article img.affiche {
+    width: 100%;
+    height: 250px;
+  }
+
+  main article a.enSavoirPlus {
+    min-width: max-content;
+  }
+
+}
+
+/* ----- DESKTOP DEVICES OVER 1279px ----- */
+@media screen and (min-width: 1280px){
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  main section.dernieresPublications h2 {
+    margin-left: 20px;
+  }
+
+  main section.dernieresPublications article {
+    width: calc(100% / 4 - 60px);
+    margin: 20px;
+  }
+
+}
+
+

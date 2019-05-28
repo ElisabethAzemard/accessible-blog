@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Blog qui répertorie les <abbr title="Bandes Dessinées">BD</abbr>classiques</title>
+  <meta name="author" content="Elisabeth Azémard">
+  <meta name="description" content="Blog qui répertorie les classiques de la BD">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/ico-bd.png" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/ico-bd.png" alt="logo de Wiki BD" class="logo">
+    <h1>Bienvenue sur <abbr title="Wikipédia">Wiki</abbr>&nbsp;<abbr title="Bandes Dessinées">BD</abbr>&nbsp;!</h1>
+    <nav>
+      <a href="#">Blog</a>
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="dernieresPublications">
+      <h2>Dernières <abbr title="Bandes Dessinées">BD</abbr> répertoriées</h2>
+      <div class="flexBox">
+        <article itemscope itemtype="http://schema.org/Book">
+          <img itemprop="image" src="images/asterix-cleopatre.jpg" alt="Couverture du livre représentant Cléopâtre, Astérix et Obélix" class="affiche">
+          <div class="wrapInfos">
+            <h3 class="titreBD"><cite itemprop="name">Astérix & Cléopâtre</cite></h3>
+            <p class="infosBD">Auteur : <span itemprop="author">René Goscinny</span></p>
+            <p class="infosBD">Illustrateur : <span itemprop="illustrator">Albert Uderzo</span></p>
+            <p class="infosBD">Résumé : <span class="resumeBD" itemprop="about">Astérix et Obélix s'embarquent dans une folle aventure en Egypte...</span></p>
+            <p class="infosBD">Date de parution : <time itemprop="dateCreated" datetime="1965">1965</time></p>
+            <a href="#" class="enSavoirPlus" role="button">&raquo; En savoir plus</a>
+          </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/Book">
+          <img itemprop="image" src="images/tintin-boules-de-cristal.jpg" alt="Couverture du livre représentant Tintin, le capitaine Hadock et le professeur Tournesol" class="affiche">
+          <div class="wrapInfos">
+            <h3 class="titreBD"><cite itemprop="name">Tintin : Les 7 boules de cristal</cite></h3>
+            <p class="infosBD">Auteur : <span itemprop="author">Hergé</span></p>
+            <p class="infosBD">Illustrateur : <span itemprop="illustrator">Hergé</span></p>
+            <p class="infosBD">Résumé : <span class="resumeBD" itemprop="about">Tintin et le capitaine Hadock dans une nouvelle aventure !</span></p>
+            <p class="infosBD">Date de parution : <time itemprop="dateCreated" datetime="1948">1948</time></p>
+            <a href="#" class="enSavoirPlus" role="button">&raquo; En savoir plus</a>
+          </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/Book">
+          <img itemprop="image" src="images/asterix-bretons.jpg" alt="Couverture du livre représentant Astérix et Obélix sur un terrain de rugby" class="affiche">
+          <div class="wrapInfos">
+            <h3 class="titreBD"><cite itemprop="name">Astérix chez les Bretons</cite></h3>
+            <p class="infosBD">Auteur : <span itemprop="author">René Goscinny</span></p>
+            <p class="infosBD">Illustrateur : <span itemprop="illustrator">Albert Uderzo</span></p>
+            <p class="infosBD">Résumé : <span class="resumeBD" itemprop="about">Astérix et Obélix s'embarquent dans une folle aventure chez les Grands Bretons...</span></p>
+            <p class="infosBD">Date de parution : <time itemprop="dateCreated" datetime="1966">1966</time></p>
+            <a href="#" class="enSavoirPlus" role="button">&raquo; En savoir plus</a>
+          </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/Book">
+          <img itemprop="image" src="images/tintin-lotus-bleu.jpg" alt="Couverture du livre représentant Tintin et Milou" class="affiche">
+          <div class="wrapInfos">
+            <h3 class="titreBD"><cite itemprop="name">Tintin : Le lotus bleu</cite></h3>
+            <p class="infosBD">Auteur : <span itemprop="author">Hergé</span></p>
+            <p class="infosBD">Illustrateur : <span itemprop="illustrator">Hergé</span></p>
+            <p class="infosBD">Résumé : <span class="resumeBD" itemprop="about">Tintin et le capitaine Hadock au pays du soleil levant.</span></p>
+            <p class="infosBD">Date de parution : <time itemprop="dateCreated" datetime="1935">1935</time></p>
+            <a href="#" class="enSavoirPlus" role="button">&raquo; En savoir plus</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- <section class="commentairesRecents">
+      ADD ANOTHER SECTION TO HOMEPAGE
+    </section> -->
+  </main>
+  <footer>
+    <p>&copy; Elisabeth Azémard - <time datetime="2019">2019</time></p>
+  </footer>
+</body>
+</html>
